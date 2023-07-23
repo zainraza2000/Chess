@@ -1,0 +1,2 @@
+C:\Users\ASUS\Desktop\PROJECT\Chess\Debug\Chess.exe
+C:\Users\ASUS\Desktop\PROJECT\Chess\Debug\Chess.pdb

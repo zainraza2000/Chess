@@ -1,0 +1,60 @@
+﻿  Chess.cpp
+C:\Users\ASUS\Desktop\PROJECT\Chess\Bishop.h(16,1): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\ASUS\Desktop\PROJECT\Chess\Bishop.h(17,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ASUS\Desktop\PROJECT\Chess\Bishop.h(17,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ASUS\Desktop\PROJECT\Chess\Knight.h(16,1): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\ASUS\Desktop\PROJECT\Chess\Knight.h(17,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ASUS\Desktop\PROJECT\Chess\Knight.h(17,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ASUS\Desktop\PROJECT\Chess\King.h(16,1): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\ASUS\Desktop\PROJECT\Chess\King.h(17,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ASUS\Desktop\PROJECT\Chess\King.h(17,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ASUS\Desktop\PROJECT\Chess\Pawn.h(17,1): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\ASUS\Desktop\PROJECT\Chess\Pawn.h(18,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ASUS\Desktop\PROJECT\Chess\Pawn.h(18,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ASUS\Desktop\PROJECT\Chess\Queen.h(16,1): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\ASUS\Desktop\PROJECT\Chess\Queen.h(17,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ASUS\Desktop\PROJECT\Chess\Queen.h(17,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ASUS\Desktop\PROJECT\Chess\Rook.h(16,1): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\ASUS\Desktop\PROJECT\Chess\Rook.h(17,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ASUS\Desktop\PROJECT\Chess\Rook.h(17,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\ASUS\Desktop\PROJECT\Chess\Chess.h(29,1): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\ASUS\Desktop\PROJECT\Chess\Chess.h(36,1): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\ASUS\Desktop\PROJECT\Chess\Chess.h(42,1): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\ASUS\Desktop\PROJECT\Chess\Chess.h(320): warning C4715: 'Chess::InitiateMove': not all control paths return a value
+  Chess.vcxproj -> C:\Users\ASUS\Desktop\PROJECT\Chess\Debug\Chess.exe

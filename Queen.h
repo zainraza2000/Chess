@@ -1,0 +1,108 @@
+#pragma once
+#include "Piece.h"
+class Queen : public Piece
+{
+public:
+	Queen(char color, int x, int y) : Piece(color, x, y) {}
+	sf::Sprite getSprite()
+	{
+		sf::Sprite sprite;
+		static sf::Texture texture;
+		if (PieceColor == 'W')
+			texture.loadFromFile("w_queen.png");
+		else
+			texture.loadFromFile("b_queen.png");
+		sprite.setTexture(texture);
+		sprite.scale(sf::Vector2f(0.35, 0.37));
+		sprite.setPosition(y * 100, x * 100);
+		return sprite;
+	}
+	void setxy(int x, int y)
+	{
+		this->x = x;
+		this->y = y;
+	}
+private:
+	char getPiece() {
+		return 'Q';
+	}
+	bool MovePossible(int fromRow, int fromCol, int toRow, int toCol, Piece* pieces[8][8])
+	{
+		int RowDirection;
+		int ColDirection;
+		Piece* toPiece = pieces[toRow][toCol];
+		if ((toPiece == 0) || (PieceColor != toPiece->getColor()))
+		{
+			if (fromRow == toRow)
+			{
+				if (toCol - fromCol > 0)
+				{
+					ColDirection = 1;
+				}
+				else
+				{
+					ColDirection = -1;
+				}
+				for (int CheckCol = fromCol + ColDirection; CheckCol != toCol; CheckCol = CheckCol + ColDirection)
+				{
+					if (pieces[fromRow][CheckCol] != 0)
+					{
+						return false;
+					}
+				}
+				return true;
+			}
+			else if (toCol == fromCol)
+			{
+				if (toRow - fromRow > 0)
+				{
+					RowDirection = 1;
+				}
+				else
+				{
+					RowDirection = -1;
+				}
+				for (int CheckRow = fromRow + RowDirection; CheckRow != toRow; CheckRow = CheckRow + RowDirection)
+				{
+					if (pieces[CheckRow][fromCol] != 0)
+					{
+						return false;
+					}
+				}
+				return true;
+			}
+			else if ((toCol - fromCol == toRow - fromRow) || (toCol - fromCol == fromRow - toRow))
+			{
+				if (toRow - fromRow > 0)
+				{
+					RowDirection = 1;
+				}
+				else
+				{
+					RowDirection = -1;
+				}
+				if (toCol - fromCol > 0)
+				{
+					ColDirection = 1;
+				}
+				else
+				{
+					ColDirection = -1;
+				}
+				int CheckRow;
+				int CheckCol;
+				for (CheckRow = fromRow + RowDirection, CheckCol = fromCol + ColDirection;
+					CheckRow != toRow;
+					CheckRow = CheckRow + RowDirection, CheckCol = CheckCol + ColDirection)
+				{
+					if (pieces[CheckRow][CheckCol] != 0)
+					{
+						return false;
+					}
+				}
+				return true;
+			}
+		}
+		return false;
+	}
+};
